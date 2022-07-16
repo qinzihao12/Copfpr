@@ -59,7 +59,6 @@ import moveis from '@/components/moveis.vue'
     
 <style lang='scss' scoped>
 .F {
-  margin-top: 10px;
   .TAp {
     width: 900px;
     position: relative;

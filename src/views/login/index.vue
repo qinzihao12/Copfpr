@@ -1,6 +1,6 @@
 <template>
-        <div>
-       login
+        <div class="F">
+APP login       登录
         </div>
 </template>
     
@@ -8,6 +8,7 @@
     
 </script>
     
-<style>
-    
+<style scoped lang='scss'>
+    .F{
+    }
 </style>

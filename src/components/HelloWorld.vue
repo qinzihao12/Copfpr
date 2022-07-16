@@ -1,5 +1,12 @@
 <script setup>
-
+import {useRoute,useRouter} from 'vue-router';
+import {ref} from 'vue'
+const route =useRoute()
+const router =useRouter()
+function psh(a) {
+    router.push({name:a})
+}
+const val=ref('12');
 
 </script>
 
@@ -7,10 +14,10 @@
 
  <div class='wrapper'>
  <div class="centerBox" id="F">
-<img src='../assets/Aa.png' >
-<input type="text" class="inp">
+<img src='../assets/Aa.png'  @click="psh('Login')">
+<input type="text" class="inp" placeholder="就让山上的斑鸠叫吧,我要像死了一般">
 <ul class="recommend">
-<div>App</div>
+<div @click="psh('LoginOut')">App</div>
 <div>订阅</div>
 <div>发电</div>
 <div>观看历史</div>
@@ -19,9 +26,9 @@
 <div class="centerBox" id="o">
 <div class="center">
 <img src='../assets/Aa.png' >
-<p>⌛观看历史</p>
+<p>⌛观看历史{{val}}</p>
 </div>
-<input type="text" class="inp">
+<input type="text" class="inp" v-model="val"  placeholder="就让山上的斑鸠叫吧,我要像死了一般.">
 </div>
 </div>
 

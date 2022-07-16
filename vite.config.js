@@ -5,7 +5,7 @@ import Components from 'unplugin-vue-components/vite'
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 
 
-import { wrapperEnv } from './build/utils'
+import { wrapperEnv } from './src/build/utils'
 import path from 'path'
 export default defineConfig(({ command, mode }) => {
     const env = loadEnv(mode, process.cwd())
@@ -21,6 +21,10 @@ export default defineConfig(({ command, mode }) => {
         plugins: [vue(), Components({
             resolvers: [NaiveUiResolver()]
         })],
+        server: {
+            host: true, // 本机的局域网IP
+            port: '8080', // 端口号，一般情况下为8080
+        },
         base: VITE_PUBLIC_PATH || '/',
         css: {
             preprocessorOptions: {

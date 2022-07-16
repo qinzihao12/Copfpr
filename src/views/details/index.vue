@@ -1,13 +1,13 @@
 <template>
         <div class="home">
-       <homeF class="F"></homeF>
-       <homeT class="T"></homeT>
+          <detailsF class="F"></detailsF>
+       <detailsT class="T"></detailsT>
         </div>
 </template>
     
 <script setup >
-import homeF from './homeF.vue'
-import homeT from './homeT.vue'
+import detailsF from './detailsF.vue'
+import detailsT from './detailsT.vue'
     
 </script>
     

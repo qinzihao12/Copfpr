@@ -4,7 +4,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
 
-<div>
+<div class="ap">
 <HelloWorld class="viw"/>
 <router-view class="router"></router-view>
 
@@ -19,9 +19,9 @@ import HelloWorld from './components/HelloWorld.vue'
   padding: 0;
   list-style: none;
 }
-
 .router{
   position: relative;
-margin-top: 3.25rem;
+
+margin-top: 4.75rem;
 }
 </style>

@@ -14,7 +14,7 @@
     </div>
     <div class="introduction">
     <div class="k" v-for="(i,index) in 12 " :key="index">
-    <img src="@/assets/logo.png" alt="">
+    <img src="@/assets/logo.png" alt=""  @click="psh('details')">
           <p>标题</p>
          <n-rate />
     </div>
@@ -25,7 +25,13 @@
 </template>
     
 <script setup >
-    
+    import {useRoute,useRouter} from 'vue-router';
+const route =useRoute()
+const router =useRouter()
+function psh(a) {
+    router.push({name:a})
+}
+
 </script>
     
 <style scoped lang='scss'>
