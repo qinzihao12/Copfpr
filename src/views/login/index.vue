@@ -9,6 +9,4 @@ APP login       登录
 </script>
     
 <style scoped lang='scss'>
-    .F{
-    }
 </style>

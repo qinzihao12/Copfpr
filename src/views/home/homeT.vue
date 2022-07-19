@@ -1,4 +1,5 @@
 <template>
+
 <div class="T">
      <n-carousel autoplay class="carousel">
         <img
@@ -47,7 +48,8 @@
         </ul>
     
 </div>
-<moveis />
+<moveis/>
+
 </template>
     
 <script setup >

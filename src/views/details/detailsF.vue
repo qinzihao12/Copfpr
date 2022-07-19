@@ -8,11 +8,11 @@
         </div>
 </template>
     
-<script setup lang='ts'>
+<script setup >
     
 </script>
     
-<style >
+<style  scope>
     .details{
         position: relative;
         width: 900px;

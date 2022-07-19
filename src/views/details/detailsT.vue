@@ -7,11 +7,11 @@
         </div>
 </template>
     
-<script setup lang='ts'>
+<script setup>
     
 </script>
     
-<style >
+<style scope>
     .details{
         margin-top: 5rem;
         position: relative;
