@@ -16,7 +16,7 @@
     .details{
         position: relative;
         width: 900px;
-        background-color: red;
+background-color: red;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
