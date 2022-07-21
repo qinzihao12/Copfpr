@@ -17,16 +17,16 @@ const val=ref('12');
 <img src='../assets/Aa.png'  @click="psh('Login')">
 <input type="text" class="inp" placeholder="就让山上的斑鸠叫吧,我要像死了一般">
 <ul class="recommend">
-<div @click="psh('LoginOut')">App</div>
-<div>订阅</div>
-<div>发电</div>
-<div>观看历史</div>
+<div @click="psh('LoginOut')">切换</div>
+<div>文章</div>
+<div>赞助</div>
+<div>联系方式</div>
 </ul>
 </div>
 <div class="centerBox" id="o">
 <div class="center">
 <img src='../assets/Aa.png' >
-<p>⌛观看历史{{val}}</p>
+<p>内容</p>
 </div>
 <input type="text" class="inp" v-model="val"  placeholder="就让山上的斑鸠叫吧,我要像死了一般.">
 </div>
@@ -39,10 +39,9 @@ const val=ref('12');
     top: 0;
     z-index: 100000;
     position: fixed;
-    width: 1247px;
-    height: 4.625rem;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 1px 1px 3px  black;
+    width: 100%;
+    height: 3.625rem;
+      background-color: $primarytColor;
 #o{
       display: none;
 } 
@@ -50,9 +49,10 @@ const val=ref('12');
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-width: 1000px;
+width: 62.5rem;
 height: 100%;
 align-items: center;
+justify-content: center;
 display: flex;
     img{
         
@@ -62,10 +62,11 @@ display: flex;
     }
 .inp{
    border-radius: 14px;
-    height: 2.75rem;
+    height: 1.75rem;
     width: 20.9375rem;
     padding: 0 0 0 15px;
     cursor: text;
+    border: none;
 }
 .recommend{
     width: 22.5rem;

@@ -12,6 +12,10 @@ import HelloWorld from './components/HelloWorld.vue'
 </template>
 
 <style lang='scss'>
+:root{
+  background: $primaryfColor;
+  color: rgb(0, 0, 0);
+}
 *{
   font-size: 16px;
   line-height: 18.4px;
